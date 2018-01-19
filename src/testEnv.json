@@ -1,0 +1,25 @@
+{
+  "android": {
+    "data": {
+      "device": "Nexus 5X",
+      "release": "dogfood",
+      "app-version": "2.13.0",
+      "build": 10672
+    },
+    "cloned_id": ["261802"]
+  },
+  "ios": {
+    "data": {
+      "device": "iPhone 7",
+      "release": "dogfood",
+      "app-version": "2.13.0",
+      "build": 929
+    },
+    "cloned_id": ["261802"]
+  },
+  "practitest": {
+    "sync": true,
+    "development_run": false
+  }
+}
+

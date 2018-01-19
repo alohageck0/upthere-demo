@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  WebDriverAgent
+//
+//  Created on 16/12/16.
+//  Copyright © 2016 Facebook. All rights reserved.
+//
+
+DEVELOPMENT_TEAM = QE87889RLN //id here
+CODE_SIGN_IDENTITY = iPhone Developer

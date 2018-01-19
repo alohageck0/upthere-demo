@@ -1,0 +1,29 @@
+{
+  "token": "253694|8bmnbrtjptlsndigdptl8ebmu4",
+  "data": {
+    "networks": {
+      "count": "0",
+      "data": []
+    },
+    "push_settings": {
+      "networkOffline": "false",
+      "nodeOffline": "false"
+    },
+    "phone": {
+      "verified": "true",
+      "value": "+14155550901"
+    },
+    "email": {
+      "verified": "true",
+      "value": "test+evgeniiframe@e2ro.com"
+    },
+    "name": "Evgenii NewFrame",
+    "premium_status": "trial_eligible",
+    "role": "none",
+    "log_id": "UID0000006579"
+  },
+  "meta": {
+    "server_time": "2017-11-28T00:17:53.456Z",
+    "code": "200"
+  }
+}
