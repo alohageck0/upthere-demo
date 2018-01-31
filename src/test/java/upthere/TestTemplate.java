@@ -1,14 +1,12 @@
-package com.eero.tdeero;
+package upthere;
 
-import com.eero.qa.apis.testAccount.UserService;
-import com.eero.tdeero.framework.AppiumConfigurator;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.remote.MobilePlatform;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import upthere.framework.AppiumConfigurator;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -19,8 +17,7 @@ public abstract class TestTemplate {
    public static final String TEST_USER_FOLDER = "/test/java/testUser";
    private AppiumConfigurator config = new AppiumConfigurator();
    private AppiumDriver driver;
-   private Eero eero;
-   protected UserService testUser = new UserService();
+   private Upthere upthere;
    private String mobilePlatform = System.getProperty("platform");
 //   protected Logger logger = Logger.getLogger(this.getClass().getName());
 
@@ -35,8 +32,8 @@ public abstract class TestTemplate {
 //      return driver;
 //   }
 
-   public Eero getEero() {
-      return eero;
+   public Upthere getUpthere() {
+      return upthere;
    }
 
    @BeforeClass(alwaysRun = true)
@@ -49,7 +46,7 @@ public abstract class TestTemplate {
       } else {
          this.driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), config.getCapabilities());
       }
-      this.eero = new Eero(driver);
+      this.upthere = new Upthere(driver);
    }
 
    @BeforeMethod
@@ -69,16 +66,5 @@ public abstract class TestTemplate {
          e.printStackTrace();
       }
       config.cleanUp();
-   }
-
-   public void setTestUser(String userPhoneNubmer) {
-      testUser.getTestUserFromJSON(userPhoneNubmer);
-   }
-
-   private String setMobilePlatform(String platform) {
-      if (platform.equalsIgnoreCase("android")) {
-         return MobilePlatform.ANDROID;
-      }
-      return MobilePlatform.IOS;
    }
 }

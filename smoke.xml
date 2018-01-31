@@ -9,7 +9,7 @@
             </run>
         </groups>
         <classes>
-            <class name="com.eero.tdeero.Login"/>
+            <class name="Login"/>
         </classes>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package com.eero.tdeero.framework;
+package upthere.framework;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;

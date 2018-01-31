@@ -1,4 +1,4 @@
-package com.eero.tdeero.screen;
+package upthere.screen;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

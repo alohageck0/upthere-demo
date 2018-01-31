@@ -1,15 +1,15 @@
-package com.eero.tdeero;
+package upthere;
 
-import com.eero.tdeero.screen.LoginScreen;
-import com.eero.tdeero.screen.VerifyCodeScreen;
-import com.eero.tdeero.screen.WelcomeToEeroScreen;
-import com.eero.tdeero.screen.WelcomeScreen;
+import upthere.screen.LoginScreen;
+import upthere.screen.VerifyCodeScreen;
+import upthere.screen.WelcomeToEeroScreen;
+import upthere.screen.WelcomeScreen;
 import io.appium.java_client.AppiumDriver;
 
-public class Eero {
+public class Upthere {
    private final AppiumDriver driver;
 
-   public Eero(AppiumDriver driver) {
+   public Upthere(AppiumDriver driver) {
       this.driver = driver;
    }
 

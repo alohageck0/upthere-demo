@@ -1,4 +1,4 @@
-package com.eero.tdeero.framework;
+package upthere.framework;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 

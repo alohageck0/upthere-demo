@@ -1,4 +1,4 @@
-package com.eero.tdeero;
+package upthere;
 
 import org.testng.annotations.Test;
 
