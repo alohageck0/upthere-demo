@@ -1,5 +1,6 @@
 package upthere.framework;
 
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -38,8 +39,10 @@ public final class AppiumConfigurator {
       //android
       appiumServer.setAppPath(appAndroid);
       capabilities.setCapability("platformName", "Android");
+//      capabilities.setCapability("automationName", "uiautomator2");
       capabilities.setCapability("deviceName", "Android Device");
       capabilities.setCapability("newCommandTimeout", 180);
+      capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, "com.upthere.skydroid.auth.LoginActivity");
    }
 
    public void cleanUp() {

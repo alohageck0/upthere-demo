@@ -1,10 +1,8 @@
 package upthere;
 
-import upthere.screen.LoginScreen;
-import upthere.screen.VerifyCodeScreen;
-import upthere.screen.WelcomeToEeroScreen;
-import upthere.screen.WelcomeScreen;
 import io.appium.java_client.AppiumDriver;
+import upthere.screen.WelcomeAppScreen;
+import upthere.screen.WelcomeScreen;
 
 public class Upthere {
    private final AppiumDriver driver;
@@ -17,16 +15,8 @@ public class Upthere {
       return new WelcomeScreen(driver);
    }
 
-   public WelcomeToEeroScreen welcomeToEeroScreen() {
-      return new WelcomeToEeroScreen(driver);
+   public WelcomeAppScreen welcomeAppScreen() {
+      return new WelcomeAppScreen(driver);
    }
 
-   public LoginScreen loginScreen() {
-      return new LoginScreen(driver);
-   }
-
-
-   public VerifyCodeScreen verifyCodeScreen() {
-      return new VerifyCodeScreen(driver);
-   }
 }

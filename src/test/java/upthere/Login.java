@@ -15,12 +15,11 @@ public class Login extends TestTemplate {
    public Login() {
    }
 
+
    @Test(groups = {"android", "ios"})
-   public void openLoginScreen() {
-      getUpthere().welcomeScreen().tapNext();
-      getUpthere().welcomeScreen().tapNext();
-      getUpthere().welcomeScreen().tapNext();
-      getUpthere().welcomeScreen().tapGetStarted();
-      getUpthere().welcomeToEeroScreen().assertScreen();
+   public void loginWithGoogleAccount() {
+      getUpthere().welcomeScreen().tapGoogleSignIn();
+      getUpthere().welcomeScreen().tapGoogleAccount();
+      getUpthere().welcomeAppScreen().assertScreen();
    }
 }
